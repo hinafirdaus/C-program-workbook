@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+float l,b,area_rec, peri_rec, r, circ,area_c;
+clrscr();
+//area and perimeter of rectangle
+printf("Enter the length and breadth of rectangle\n (in cm)");
+scanf("%f %f",&l,&b);
+printf("\nlength=%f cm, breadth=%f cm ",l,b);
+area_rec=l*b;
+peri_rec=2*(l+b);
+
+//area and circumference of circle
+printf("\nEnter the radius of the circle: (in cm)");
+scanf("%f",&r);
+printf("\nradius=%f cm\n",r);
+circ=2*3.14*r;
+area_c=circ*r;
+
+printf("\nThe area of rectangle %f cm^2\n",area_rec);
+printf("\nThe perimeter of rectangle %f cm\n",peri_rec);
+printf("\nThe circumference of circle %f cm\n", circ);
+printf("\nThe area of circle %f cm^2", area_c);
+getch();
+}
