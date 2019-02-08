@@ -1,0 +1,22 @@
+/*the distance between two cities(in km.) is i/p through the keyb.
+write a program to convert and print this distance in meters, feet, inches
+and cms */
+
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+float km,m,inch,cm,feet;
+clrscr();
+printf("Enter the distance of city A to B (in Km): ");
+scanf("%f",&km);
+m=km*1000;
+printf("\n%fkm in meters is %fm",km,m);
+cm=m*100;
+printf("\n%fm in centimeter is %fcm",m,cm);
+inch=cm*2.54;
+printf("\n%fcm in inches is %f inch",cm,inch);
+feet=m*3.28;
+printf("\n%fm in feet is %f feet",m, feet);
+getch();
+}
