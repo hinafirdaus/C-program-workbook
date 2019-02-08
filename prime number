@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+//find the prime no. using user input
+void main()
+{
+int num,p,pr;
+clrscr();
+printf("enter the number to find prime or not: ");
+scanf("%d", &num);
+for(p=num;p>=2;p--){
+pr=num%p;
+}
+if(pr==0)
+printf("\n%d is not a prime",num);
+else
+printf("\n%d is a prime",num);
+getch();
+}
