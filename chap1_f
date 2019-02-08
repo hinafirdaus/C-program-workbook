@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+int c,d,temp;
+clrscr();
+printf("Enter two values of your choice!\n");
+scanf("%d %d",&c,&d);
+
+temp=c;
+c=d;
+d=temp;
+printf("Voila! your order is swapped now\n c:%d, d:%d",c,d);
+getch();
+}
