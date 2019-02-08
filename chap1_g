@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+int sp,cp,profit,i;
+clrscr();
+for(i=1;i<=15;i++){
+printf("Enter the Selling price of Item%d\n (in Rs)",i);
+scanf("%d",&sp);
+printf("What is the profit of item%d (in Rs)\n",i);
+scanf("%d",&profit);
+printf("\nCost Price of Item%d is %d\n",i, profit-sp);
+}
+getch();
+}
