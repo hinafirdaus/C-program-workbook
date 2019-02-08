@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+int i, m[5],tot=0;
+float per;
+clrscr();
+for(i=1;i<=5;i++){
+printf("enter the marks of subject %d\n",i);
+scanf("%d",&m[i]);
+}
+for(i=1;i<=5;i++){
+tot=tot+m[i];
+}
+per=tot/5;
+printf("\ntotal of the subject is %d",tot);
+printf("\npercentage of the subject is %f %",per);
+getch();
+}
