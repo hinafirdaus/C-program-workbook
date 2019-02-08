@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<>
+
+void main(){
+int l=1189,b=841,a,new_l;
+clrscr();
+printf("A0 paper size is %d x %d\n",l,b);
+
+for(a=1;a<=8;a++){
+if(l>b){
+new_l=l/2;
+l=b;
+b=new_l;
+}
+printf("\nA%d paper size is %d x %d\n",a,l,b);
+}
+getch();
+}
