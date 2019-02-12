@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+
+int a, sum,b,c;
+clrscr();
+printf("Enter a four digit number: ");
+scanf("%d",&a);
+b=a%10;
+c=a/1000;
+sum=b+c;
+printf("\nThe sum of first and last digit of %d is %d",a,sum);
+getch();
+}
