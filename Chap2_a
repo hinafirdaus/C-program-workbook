@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+int a, sum, b,c,d,e,f,g,h,i,j;
+clrscr();
+printf("The five digit number to get it's sum:");
+scanf("%d",&a);
+c=a%10; //unit digit
+d=a/10;
+e=d%10; //tens digit
+f=d/10;
+g=f%10; //hundreds digit
+h=f/10;
+i=h%10;  //thousands digit
+j=h/10;  //ten thousands digit
+//k=j%10; //ten thousands digit
+sum = c+e+g+i+j;
+printf("\nsum of %d is: %d",a,sum);
+getch();
+}
