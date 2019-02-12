@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+void main(){
+float x,y,r,theta;
+clrscr();
+printf("Enter the cartesian coordinates for (x,y) point: ");
+scanf("%f %f",&x,&y);
+//calculating the polar coordinates (r, theta)
+r=pow(x,2)+pow(y,2);
+r=sqrt(r);
+
+theta = y/x;
+theta = (atan(theta)) * 57.27;
+
+printf("\nThe value of the polar coordinates for (%f,%f) is (%f,%f)\n",x,y,r,theta);
+
+
+getch();
+}
