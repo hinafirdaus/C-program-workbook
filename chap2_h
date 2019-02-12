@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+void main(){
+float l1, l2, g1, g2, d,x,y,z;
+clrscr();
+printf("Enter the latitude of place1(in deg): ");
+scanf("%f",&l1);
+printf("\nEnter the longitude of place1(in deg): ");
+scanf("%f",&g1);
+printf("\nEnter the latitude of place2(in deg): ");
+scanf("%f",&l2);
+printf("\nEnter the longitude of place2(in deg): ");
+scanf("%f",&g2);
+
+x=sin(l1)*sin(l2);
+y=cos(l1)*cos(l2);
+z=cos(g2-g1);
+d=3963 * acos(x+y*z);
+printf("\nDistance between place1 and place2 is: %f nautical miles",d);
+getch();
+}
