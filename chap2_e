@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+int num, a,b,c,d,e,i,j,k,l,m,a1,a2,a3,a4,a5;
+clrscr();
+printf("Enter a five digit number:");
+scanf("%d", &num);
+//unit digit
+a=num%10;
+i=num/10;
+a=a+1;
+a1=a/10;
+a=a%10;
+
+//tens digit
+b=i%10;
+j=i/10;
+b=b+1;
+a2=(b+a1)/10;
+b=(b+a1)%10;
+
+//hundreds digit
+c=j%10;
+k=j/10;
+c=c+1;
+a3=(c+a2)/10;
+c=(c+a2)%10;
+
+//thousands digit
+d=k%10;
+d=d+1;
+a4=(d+a3)/10;
+d=(d+a3)%10;
+
+//ten thousands digit
+l=k/10;
+l=l+1;
+a5=(l+a4)/10;
+l=(l+a5+a4)%10;
+
+printf("\nthe number %d after adding one to each digit we get %d%d%d%d%d\n",num, l,d,c,b,a);
+
+getch();
+
+}
