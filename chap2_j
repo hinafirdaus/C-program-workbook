@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+void main(){
+float temp, vel, wcf,p;
+clrscr();
+printf("Enter the temperature of your place: ");
+scanf("%f", &temp);
+printf("\nEnter the wind velocity of your place: ");
+scanf("%f", &vel);
+
+ p=pow(vel, 0.16);
+wcf= 35.74+ 0.6215*temp + (((0.4275*temp) - 35.75) * p);
+printf("\n%f", wcf);
+getch();
+}
