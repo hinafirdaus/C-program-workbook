@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+void main(){
+float a,b,c,area,s;
+clrscr();
+printf("Enter the length of side ab of the triangle ABC(in cm): ");
+scanf("%f",&a);
+printf("Enter the length of side bc of the triangle ABC(in cm): ");
+scanf("%f",&b);
+printf("Enter the length of side ac of the triangle ABC(in cm): ");
+scanf("%f",&c);
+//first find s=1(a+b+c)/2
+s=(a+b+c)/2;
+//area of triangle is s=sqrt(s(s-a)(s-b)(s-c))
+area=s*(s-a)*(s-b)*(s-c);
+area=sqrt(area);
+printf("\nThe value of s=%f and Area of Triangle ABC=%f sq.cm",s,area);
+getch();
+
+}
