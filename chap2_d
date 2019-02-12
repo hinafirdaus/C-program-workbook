@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+int cur, re1, rs2, rs5, rs10, rs50, rs100;
+clrscr();
+printf("How much money do you want (in Rs): ");
+scanf("%d", &cur);
+//100 denomination note
+rs100=cur/100;
+cur=cur%100;
+
+//50 denomination note
+rs50=cur/50;
+cur=cur%50;
+
+//10 denomination note
+rs10=cur/10;
+cur=cur%10;
+
+//5 denomination note
+rs5=cur/5;
+cur=cur%5;
+
+//2 denomination note
+rs2=cur/2;
+cur=cur%2;
+
+//1 denomination note
+re1=cur/1;
+cur=cur%1;
+
+printf("\nThe combination of notes are:\n");
+printf("\nAmount of Rs.100/- notes are: %d", rs100);
+printf("\nAmount of Rs.50/- notes are: %d",rs50);
+printf("\nAmount of Rs.10/- notes are: %d",rs10);
+printf("\nAmount of Rs.5/- notes are: %d", rs5);
+printf("\nAmount of Rs.2/- notes are: %d",rs2);
+printf("\nAmount of Re.1/- notes are: %d", re1);
+
+
+getch();
+}
