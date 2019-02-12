@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+void main(){
+float deg,s,c,sum;
+clrscr();
+printf("Enter the value of the angle in degree: ");
+scanf("%f",&deg);
+
+//sin2deg+cos2deg=1
+s=sin(deg);
+c=cos(deg);
+sum=pow(s,2)+pow(c,2);
+//sum=sum*57.27;
+printf("The sum of given degree %f is %f",deg, sum);
+getch();
+}
