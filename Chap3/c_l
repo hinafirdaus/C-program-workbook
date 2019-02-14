@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+int x1,y1;
+clrscr();
+printf("Enter the point for (x1,y1)\n");
+scanf("%d %d", &x1, &y1);
+
+if((y1==0) && (x1!=0)){
+printf("\nThe given point lies on the X-axis");
+}
+else if((x1==0) && (y1!=0)){
+printf("\nThe given point lies on the Y-axis");
+}
+else if((x1==0)&&(y1==0))
+{
+printf("\nThe given point is at the origin");
+}
+else {
+printf("\nThe point lies somewhere in the plane");
+}
+getch();
+}
