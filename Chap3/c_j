@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+int x1,y1,x2,y2,x3,y3,m1,m2,m3;
+clrscr();
+printf("The coordinate for point A (x1, y1)\n");
+scanf("%d %d",&x1,&y1);
+printf("\nThe coordinate for point B (x2,y2)\n");
+scanf("%d %d",&x2, &y2);
+printf("\nThe coordinate for point C (x3,y3)\n");
+scanf("%d %d",&x3, &y3);
+
+m1=(y2-y1)/(x2-x1);
+m2=(y3-y2)/(x3-x2);
+m3=(y3-y1)/(x3-x1);
+
+if((m1==m2)&&(m2==m3)&&(m1==m3)){
+printf("\nThe given points are colinear");
+}
+else{
+printf("\nThe given points are not colinear");
+}
+
+getch();
+}
