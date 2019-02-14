@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+void main(){
+int r=5, xc=5, yc=0, x1, y1,d,x,y;
+clrscr();
+printf("Enter a point to check whether it is inside or outside the circle?\n");
+scanf("%d %d",&x1,&y1);
+
+x=(abs(x1-xc));
+y=(abs(y1-yc));
+d=(sqrt(pow(x,2)+pow(y,2)));
+
+if(r>d){
+printf("\nThe point (%d,%d) is inside the circle", x1, y1);
+}
+else{
+printf("\nThe point (%d,%d) is outside the circle", x1, y1);
+}
+getch();
+}
