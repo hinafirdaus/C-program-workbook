@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+int l,b, per, ar;
+clrscr();
+
+printf("Enter the length of the side of a rectangle (in cm): ");
+scanf("%d",&l);
+printf("\nEnter the breadth of the side of a rectangle (in cm): ");
+scanf("%d",&b);
+
+ar=l*b;
+per = 2*(l+b);
+
+if(ar>per){
+printf("\nThe area %d sq.cm is greater than the %d cm perimeter of the rectangle\n ", ar, per);
+}
+else{
+printf("\nThe perimeter %d cm is greater than the %d sq.cm area of the rectangle\n", per, ar);
+}
+getch();
+}
