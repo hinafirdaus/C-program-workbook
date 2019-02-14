@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+int a,b,c, sum;
+clrscr();
+printf("**** Check given angle is for triangle or not ****\n\n");
+printf("\nEnter the first angle (in deg): ");
+scanf("%d",&a);
+printf("\nEnter the second angle (in deg): ");
+scanf("%d",&b);
+printf("\nEnter the third angle (in deg): ");
+scanf("%d",&c);
+
+sum=a+b+c;
+if(sum==180){
+printf("\nThe given angle makes a triangle");
+}
+else{
+printf("\nSadly the angle you entered doesn't make a triangle");
+}
+
+getch();
+}
