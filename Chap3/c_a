@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+float cp, sp, pro, loss;
+clrscr();
+printf("What is the cost price of your item(in Rs): ");
+scanf("%f",&cp);
+printf("\nHmph! What is the selling price of this item then (in Rs): ");
+scanf("%f",&sp);
+
+pro=sp-cp;
+loss=cp-sp;
+if(pro>loss) {
+printf("\nLooks like you made a profit here!");
+printf("\nYou made a profit of Rs. %f from this purchase\n",pro); }
+else
+{
+printf("\nI think your purchase cost you a loss here!! :-(");
+printf("\nYou have lost Rs. %f is this purchase, better luck next time");
+}
+getch();
+}
