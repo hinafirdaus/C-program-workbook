@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+int r,s,a,age;
+clrscr();
+printf("\nHey! What is the age of Ram?\n ");
+scanf("%d",&r);
+printf("\nAlright, the age of Shyam, please?\n");
+scanf("%d",&s);
+printf("\nhmph! What about the age of Ajay?\n");
+scanf("%d",&a);
+
+if((r<s)&&(r<a)){
+printf("\nLooks like Ram is younger than you both\n");
+}
+else if((s<r)&&(s<a))
+{
+printf("\nAh! Shyam is youngest among you three");
+}
+else
+{
+printf("\nOh! Ajay you are so young than your two brother's. So Adorable!");
+}
+getch();
+}
