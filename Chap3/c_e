@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<conio.h>
+
+void main(){
+int n, a,b,c,d,e,f,g,h;
+clrscr();
+printf("Enter a five digit number to reverse: ");
+scanf("%d",&n);
+
+a=n%10;
+b=n/10;
+
+c=b%10;
+d=b/10;
+
+e=d%10;
+f=d/10;
+
+g=f%10;
+h=f/10;
+printf("\nReverse of the number %d is %d%d%d%d%d",n,a,c,e,g,h);
+
+if((h==a)&&(g==c)&&(e==e)&&(c==g)&&(a==h)){
+printf("\nThe reverse and entered are equal");
+}
+else{
+printf("\nThe reverse and entered are not equal");
+}
+getch();
+}
