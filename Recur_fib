@@ -1,0 +1,19 @@
+#include<stdio.h>
+
+int fib(int);
+int main()
+{
+    int a;
+    printf("Enter a number to find it's fibonacci series: ");
+    scanf("%d", &a);
+    printf("\n%d", fib(a));
+
+}
+
+int fib(int n)
+{
+    if(n==0 || n==1)
+        return(n);
+    else
+        return(fib(n-1)+fib(n-2));
+}
